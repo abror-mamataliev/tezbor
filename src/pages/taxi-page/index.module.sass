@@ -1,0 +1,105 @@
+@import "@/styles/mixins"
+
+.taxiPage
+  background-color: #fff
+
+  &__form
+    @include container
+    padding-bottom: 20px
+
+  form
+    display: flex
+    flex-wrap: wrap
+    gap: 6px
+
+  &__input
+    width: 33%
+    @media (max-width: 900px)
+      width: 49%
+
+  &__carImage
+    @include container
+
+    h2
+      color: #fff
+      font-weight: 700
+      margin: 0
+      display: flex
+      align-items: center
+      gap: 5px
+      @media (max-width: 600px)
+        font-size: 15px
+
+  &__carDiv
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+
+    button:nth-child(2)
+      width: 4%
+      height: 14%
+      position: absolute
+      font-size: 30px
+      padding: 0
+      font-weight: 700
+      border: none
+      top: 51%
+      left: 40.5%
+      @media (max-width: 900px)
+        width: 7%
+        left: 33%
+        font-size: 15px
+
+    button:nth-child(3)
+      width: 4%
+      height: 14%
+      padding: 0
+      font-size: 30px
+      font-weight: 700
+      border: none
+      position: absolute
+      top: 64%
+      left: 49%
+      @media (max-width: 900px)
+        width: 7%
+        left: 48%
+        top: 64%
+        font-size: 15px
+
+    button:nth-child(4)
+      width: 4%
+      height: 14%
+      position: absolute
+      font-size: 30px
+      padding: 0
+      border: none
+      font-weight: 700
+      top: 65.5%
+      left: 40.5%
+      @media (max-width: 900px)
+        width: 7%
+        left: 33%
+        top: 65.4%
+        font-size: 15px
+
+    button:nth-child(5)
+      width: 4%
+      height: 14%
+      position: absolute
+      font-size: 30px
+      border: none
+      padding: 0
+      font-weight: 700
+      top: 36.7%
+      left: 40.5%
+      @media (max-width: 900px)
+        width: 7%
+        left: 33%
+        font-size: 15px
+
+  &__carDivImage
+    width: 55%
+    transform: rotateX(180deg)
+    @media (max-width: 900px)
+      width: 100%

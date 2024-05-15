@@ -1,0 +1,45 @@
+@import "@/styles/mixins"
+
+.carSelection
+  @include container
+  padding-left: 0
+  padding-right: 0
+
+  &__steps
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__active
+    background-color: #01c3a7
+    color: #fff
+    padding: 8px 0
+    width: 224px
+    text-align: center
+    font-weight: 700
+    border-radius: 100px
+    @media (max-width: 900px)
+      font-size: 8px
+
+  &__notActive
+    background-color: #b0b0c6
+    color: #fff
+    padding: 8px 0
+    width: 224px
+    text-align: center
+    font-weight: 700
+    border-radius: 100px
+    @media (max-width: 900px)
+      font-size: 8px
+
+  &__spanActive
+    height: 2px
+    width: 24%
+    background-color: #01c3a7
+    border-radius: 5px
+
+  &__spanNotActive
+    height: 2px
+    width: 24%
+    background-color: #b0b0c6
+    border-radius: 5px

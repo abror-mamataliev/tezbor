@@ -1,0 +1,20 @@
+body{
+    background-image: url("../../public/Images/Rectangle 2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #F0F2F7;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        background-size: cover;
+    }
+}
